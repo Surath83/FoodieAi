@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import styles from './App.module.css';
 import CaptureImage from './captureImage.jsx';
-import DailyNutritionLog from './DailyNutritionLog.jsx';
+import DailyNutritionLog from './dailyNutritionLog.jsx';
 import Footer from './footer.jsx';
 import Cards from './cards.jsx';
 import Navbar from './navbar.jsx';
