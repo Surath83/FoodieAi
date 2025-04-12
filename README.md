@@ -32,10 +32,6 @@ A full-stack AI-powered web app that lets users upload food images, recognizes t
 
 root/ ├── Frontend/ # React frontend (Vite) │ ├── public/ │ └── src/ │ ├── App.jsx │ ├── components/ │ └── ... ├── Backend/ # Flask backend API │ ├── api/ # Flask Blueprints │ ├── models/ # ML / CV logic │ ├── utility/ # Helpers, data, FDC API │ ├── input_images/ │ ├── processed_images/ │ ├── main.py │ └── requirements.txt └── README.md # This file
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ Local Setup
@@ -48,90 +44,39 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
-Make sure your model files and image folders exist:
 
-bash
-Copy
-Edit
-mkdir -p input_images processed_images
-💻 Frontend (React)
-bash
-Copy
-Edit
+```
+##💻 Frontend (React)
+
 cd Frontend
 npm install
 npm run dev
+
+```
 Create a .env file in Frontend/ with:
 
-env
-Copy
-Edit
 VITE_API_BASE_URL=https://your-backend.onrender.com
 Replace with your actual backend URL.
 
-🌐 Render Deployment
+```
+
+##🌐 Render Deployment
 Layer	Deployed URL
 Frontend	https://your-frontend.onrender.com
 Backend	https://your-backend.onrender.com
-🔗 Connecting Frontend & Backend
+
+##🔗 Connecting Frontend & Backend
+
 1. Update Frontend .env
-env
-Copy
-Edit
-VITE_API_BASE_URL=https://your-backend.onrender.com
 2. Use API in React
-js
-Copy
-Edit
-const apiUrl = import.meta.env.VITE_API_BASE_URL;
-
-fetch(`${apiUrl}/predict`, {
-  method: 'POST',
-  body: formData,
-});
 3. Enable CORS in Flask
-In main.py:
 
-python
-Copy
-Edit
-from flask_cors import CORS
-CORS(app, origins=["https://your-frontend.onrender.com"])
-🧪 API Endpoints
+##🧪 API Endpoints
 Method	Endpoint	Description
 POST	/predict	Uploads an image and returns predicted food name and nutrition info
 GET	/status	Returns basic API health/status
 GET	/log (optional)	Returns nutrition logs (to implement)
-Sample JSON Response:
 
-json
-Copy
-Edit
-{
-  "food_name": "Pizza",
-  "calories": 285,
-  "protein": "12g",
-  "fat": "10g",
-  "carbohydrates": "36g"
-}
-⚙️ Cron/Worker Tasks (Future)
-You can later add background tasks like:
-
-Automatic log cleanup
-
-Daily calorie summary
-
-Notification triggers for nutrition limits
-
-Image folder cleanup job
-
-These can be done via:
-
-Flask apscheduler
-
-Render background workers
-
-Celery with Redis (for large-scale)
 
 🖼️ Preview
 📸 Upload UI
@@ -140,7 +85,7 @@ Celery with Redis (for large-scale)
 
 Replace with your actual screenshots hosted on GitHub or another CDN.
 
-✅ Render Deployment Config
+##✅ Render Deployment Config
 Frontend
 Root Directory: Frontend/
 
@@ -166,12 +111,9 @@ Start Command: gunicorn main:app
 
 🧬 Meal suggestions based on goals
 
-👨‍💻 Author
+##👨‍💻 Author
 Surath Chowdhury
 
-markdown
-Copy
-Edit
 
 Let me know if you'd like:
 
