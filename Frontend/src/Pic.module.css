@@ -1,0 +1,20 @@
+.img{
+    height:500px;
+    width:40%;
+    margin: auto;
+    padding: 10px auto;
+}
+
+.img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.img:hover{
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
