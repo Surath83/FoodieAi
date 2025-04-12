@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './DailyNutritionLog.module.css';
+import styles from './dailyNutritionLog.module.css';
 
 const DailyNutritionLog = () => {
   const [nutritionData, setNutritionData] = useState([]);
