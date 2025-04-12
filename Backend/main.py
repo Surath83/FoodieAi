@@ -23,7 +23,7 @@ from flask_cors import CORS
 from api.track_food import track_food_bp
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://foodieai-2.onrender.com"])
 
 # Register the blueprint
 app.register_blueprint(track_food_bp)
