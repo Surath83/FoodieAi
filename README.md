@@ -85,8 +85,6 @@ npm run dev</code></pre>
 <tr><td>GET</td><td>/log (optional)</td><td>Returns nutrition logs (to be implemented)</td></tr>
 </table>
 <hr>
-<h2>🎥 Project Demo</h2>
-<video src="vedio.mp4" controls></video>
 <h2>📊 Nutrition Result</h2>
 <img src="Frontend\src\assets\img1.jpg" />
 <img src="Frontend\src\assets\img2.jpg" />
