@@ -40,7 +40,7 @@ const CaptureImage = () => {
 
   const sendToBackend = async (base64Image) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/track-food', {
+      const response = await axios.post('https://foodieai-yuk6.onrender.com/api/track-food', {
         image: base64Image,
       });
       console.log('Response from backend:', response.data);
