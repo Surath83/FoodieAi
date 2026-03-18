@@ -7,7 +7,7 @@
 <body>
 <div class="container">
 <h1>🍱 FoodieAi - AI Food Recognition & Nutrition Tracker</h1>
-<p>A full-stack AI-powered web app that lets users upload food images, recognizes the food, and returns detailed nutritional info using ML and the USDA FoodData Central dataset.</p>
+<p>A full-stack AI-powered web app that lets users upload food images, recognizes the food, and returns detailed nutritional info using ML and the USDA Food-Data Central dataset.</p>
 <hr>
 <h2>🌟 Features</h2>
 <ul>
